@@ -1,0 +1,4 @@
+# Microdatos crudos de la ENOE: superan el límite de tamaño de archivo de GitHub (100 MB).
+# Se descargan de la fuente oficial (ver README del proyecto) y se procesan con limpieza_datos.ipynb.
+regresion-caso-real-enoe/Datos/ENOE_SDEMT126.csv
+regresion-caso-real-enoe/Datos/ENOE_COE2T126.csv
