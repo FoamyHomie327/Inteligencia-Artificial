@@ -1,6 +1,6 @@
 # Portafolio de Proyectos: Inteligencia Artificial y Ciencia de Datos
 
-Colección de proyectos de modelado estadístico y machine learning, con énfasis en regresión lineal, limpieza de datos reales, selección de características e inferencia estadística. Cada proyecto incluye su análisis en Jupyter Notebook, un reporte en HTML, y los datos utilizados (o el enlace a su fuente original).
+Colección de proyectos de modelado estadístico y machine learning, con énfasis en regresión lineal, sistemas de recomendación, limpieza de datos reales, selección de características e inferencia estadística. Cada proyecto incluye su análisis en Jupyter Notebook, un reporte en HTML, y los datos utilizados (o el enlace a su fuente original).
 
 **Autor:** Arturo Vargas Espinosa ([arturovargasesp@gmail.com](mailto:arturovargasesp@gmail.com))
 
@@ -8,6 +8,7 @@ Colección de proyectos de modelado estadístico y machine learning, con énfasi
 
 | Proyecto | Descripción | Técnicas |
 |---|---|---|
+| [Sistema de Recomendación de Libros con PCA](sistema-recomendacion-libros/README.md) · [**App**](https://foamyhomie327.github.io/Inteligencia-Artificial/sistema-recomendacion-libros/app/) | Aplicación web que recomienda libros a partir de los que el usuario marca como leídos, usando PCA entrenado con 6 millones de calificaciones de Goodreads (goodbooks-10k). Corre completa en el navegador. | PCA (SVD truncada), interpretación de cargas, proyección de usuarios nuevos, similitud coseno, evaluación precisión@k |
 | [Regresión Múltiple con Datos Reales: Predicción de Ingreso Laboral en México (ENOE)](regresion-caso-real-enoe/README.md) | Proyecto integral: predicción del ingreso mensual a partir de microdatos oficiales de la ENOE (INEGI), con limpieza de una encuesta real de más de 120,000 observaciones, selección de características e inferencia estadística. | Regresión lineal múltiple, random forest, selección de características, inferencia (OLS robusto), limpieza de datos reales |
 | [Regresión Lineal Múltiple y Selección de Características: Predicción de Calificaciones Escolares](regresion-lineal-multiple/README.md) | Predicción de la calificación final de estudiantes de secundaria a partir de datos demográficos y académicos, con selección de características hacia adelante y hacia atrás. | Regresión lineal múltiple, selección de subconjuntos, análisis de colinealidad |
 | [Regresión Lineal: Felicidad y PIB per cápita](regresion-lineal-simple/README.md) | Modelos de regresión simple y múltiple para explicar el nivel de felicidad reportado por país en función de indicadores económicos y sociales. | Regresión lineal simple, regresión lineal múltiple |
@@ -23,4 +24,4 @@ Cada carpeta de proyecto es autocontenida e incluye:
 
 ## Herramientas
 
-Python (pandas, numpy, matplotlib, seaborn), statsmodels, scikit-learn.
+Python (pandas, numpy, scipy, matplotlib, seaborn), statsmodels, scikit-learn. HTML, CSS y JavaScript para la app de recomendación.
