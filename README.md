@@ -8,6 +8,7 @@ Colección de proyectos de modelado estadístico y machine learning, con énfasi
 
 | Proyecto | Descripción | Técnicas |
 |---|---|---|
+| [Predicción del Sector Económico: Comparación de Modelos de Clasificación (ENOE)](sector-economico-comparacion-modelos/README.md) · [**App**](https://foamyhomie327.github.io/Inteligencia-Artificial/sector-economico-comparacion-modelos/app/) | Proyecto final de clasificación: compara 7 modelos con los mismos 5 folds de validación cruzada para predecir el sector económico de una persona ocupada en México, elige un modelo final (Gradient Boosting) y lo evalúa una sola vez en prueba. Incluye un tablero interactivo con un simulador que corre los modelos en el navegador. | Regresión logística, LDA, árboles, Random Forest, Gradient Boosting, SVM, redes neuronales (Keras), validación cruzada, bootstrap, importancia por permutación |
 | [Sistema de Recomendación de Libros con PCA](sistema-recomendacion-libros/README.md) · [**App**](https://foamyhomie327.github.io/Inteligencia-Artificial/sistema-recomendacion-libros/app/) | Aplicación web que recomienda libros a partir de los que el usuario marca como leídos, usando PCA entrenado con 6 millones de calificaciones de Goodreads (goodbooks-10k). Corre completa en el navegador. | PCA (SVD truncada), interpretación de cargas, proyección de usuarios nuevos, similitud coseno, evaluación precisión@k |
 | [Predicción del Sector Económico: Ensambles, SVM y Redes Neuronales (ENOE)](sector-economico-ensambles-svm-redes/README.md) | Compara Random Forest, Gradient Boosting, SVM y una red neuronal contra modelos sencillos para predecir el sector económico (primario, secundario o terciario) de una persona ocupada en México, y evalúa si la complejidad adicional se traduce en mejores predicciones. | Random Forest, Gradient Boosting, SVM, redes neuronales (Keras), validación cruzada, error out-of-bag |
 | [Predicción del Sector Económico: LDA vs. Árboles de Decisión (ENOE)](sector-economico-lda-arboles/README.md) | Clasificación multiclase del sector económico con dos enfoques distintos: LDA (con revisión de supuestos y funciones discriminantes) y árboles de decisión con poda. | LDA, árboles de decisión, cost-complexity pruning, probabilidades a priori, clases desbalanceadas |
@@ -27,4 +28,4 @@ Cada carpeta de proyecto es autocontenida e incluye:
 
 ## Herramientas
 
-Python (pandas, numpy, scipy, matplotlib, seaborn), statsmodels, scikit-learn, TensorFlow/Keras. HTML, CSS y JavaScript para la app de recomendación.
+Python (pandas, numpy, scipy, matplotlib, seaborn), statsmodels, scikit-learn, TensorFlow/Keras. HTML, CSS y JavaScript para la app de recomendación y el tablero interactivo.

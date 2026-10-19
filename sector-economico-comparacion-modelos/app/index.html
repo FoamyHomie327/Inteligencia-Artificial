@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sector Económico</title>
+  <meta name="description" content="Tablero interactivo: ¿qué tan bien se puede predecir el sector económico de una persona en México con su perfil? Comparación de 7 modelos de clasificación con la ENOE 2026.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23ffffff'/%3E%3Crect x='6' y='16' width='5' height='10' rx='2' fill='%231baf7a'/%3E%3Crect x='13.5' y='11' width='5' height='15' rx='2' fill='%232a78d6'/%3E%3Crect x='21' y='6' width='5' height='20' rx='2' fill='%23eb6834'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header class="barra">
+    <div class="barra-interna">
+      <a class="marca" href="#inicio">
+        <span class="marca-icono"><i></i><i></i><i></i></span>
+        Sector Económico
+      </a>
+      <nav class="nav" id="nav">
+        <a href="#datos">Los datos</a>
+        <a href="#modelos">Los modelos</a>
+        <a href="#simulador">Simulador</a>
+        <a href="#final">Resultado final</a>
+        <a href="#conclusiones">Conclusiones</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app">
+    <div class="cargando">
+      <div class="cargando-barras"><i></i><i></i><i></i></div>
+      <p>Cargando resultados de 120,430 personas…</p>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <p>Proyecto de Inteligencia Artificial · Arturo Vargas Espinosa</p>
+    <p>Datos: <a href="https://www.inegi.org.mx/programas/enoe/15ymas/" target="_blank" rel="noopener">ENOE, primer trimestre de 2026 (INEGI)</a> ·
+      <a href="https://github.com/FoamyHomie327/Inteligencia-Artificial/tree/main/sector-economico-comparacion-modelos" target="_blank" rel="noopener">Reporte completo y código</a></p>
+    <p class="pie-nota">Todos los cálculos del simulador corren en tu navegador. No se envía ningún dato.</p>
+  </footer>
+
+  <div class="tooltip" id="tooltip" role="status" aria-live="polite"></div>
+
+  <script src="modelos.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
