@@ -5,4 +5,7 @@ regresion-caso-real-enoe/Datos/ENOE_COE2T126.csv
 
 # Calificaciones de goodbooks-10k (~72 MB): se descargan de https://github.com/zygmuntz/goodbooks-10k
 sistema-recomendacion-libros/Datos/ratings.csv
+
+# Expresión génica STAR-TPM de TCGA-HNSC (~403 MB): se descarga de UCSC Xena (ver README del proyecto).
+clustering-cancer-cabeza-cuello/Datos/hnsc_expresion_star_tpm.tsv
 .DS_Store

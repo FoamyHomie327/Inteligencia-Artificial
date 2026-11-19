@@ -1,6 +1,6 @@
 # Portafolio de Proyectos: Inteligencia Artificial y Ciencia de Datos
 
-Colección de proyectos de modelado estadístico y machine learning, con énfasis en regresión, clasificación, sistemas de recomendación, limpieza de datos reales, selección de características e inferencia estadística. Cada proyecto incluye su análisis en Jupyter Notebook, un reporte en HTML, y los datos utilizados (o el enlace a su fuente original).
+Colección de proyectos de modelado estadístico y machine learning, con énfasis en regresión, clasificación, sistemas de recomendación, aprendizaje no supervisado, aprendizaje por refuerzo, limpieza de datos reales, selección de características e inferencia estadística. Cada proyecto incluye su análisis en Jupyter Notebook, un reporte en HTML, y los datos utilizados (o el enlace a su fuente original).
 
 **Autor:** Arturo Vargas Espinosa ([arturovargasesp@gmail.com](mailto:arturovargasesp@gmail.com))
 
@@ -8,6 +8,9 @@ Colección de proyectos de modelado estadístico y machine learning, con énfasi
 
 | Proyecto | Descripción | Técnicas |
 |---|---|---|
+| [Subtipos Moleculares del Cáncer de Cabeza y Cuello: PCA y Clustering (TCGA-HNSC)](clustering-cancer-cabeza-cuello/README.md) | Proyecto final de aprendizaje no supervisado: agrupa 520 tumores de TCGA solo con su expresión génica y encuentra 4 subtipos; al cruzarlos con los datos clínicos, uno resulta ser el cáncer de orofaringe asociado al VPH, con la mejor supervivencia. | PCA, K-means, clustering jerárquico, coeficiente de silueta, prueba t de Welch con FDR, ji-cuadrada, Kaplan-Meier y log-rank |
+| [Aprendizaje por Refuerzo: Aterrizaje en la Luna con PPO (Lunar Lander)](aprendizaje-refuerzo-lunar-lander/README.md) | Entrena a un agente para aterrizar una nave en el ambiente Lunar Lander, con gifs de cada etapa del entrenamiento; pasa de estrellarse siempre a aterrizar en 99 de 100 episodios. | Aprendizaje por refuerzo, PPO (stable-baselines3), Gymnasium, curva de aprendizaje |
+| [Tutorial de Clustering: K-means y Clustering Jerárquico (NCI60)](tutorial-clustering-nci60/README.md) | Tutorial paso a paso: K-means programado desde cero con datos sintéticos, y K-means y clustering jerárquico sobre la expresión génica de 64 líneas celulares de cáncer. | K-means, PCA, clustering jerárquico, métricas de disimilitud, métodos de linkage |
 | [Predicción del Sector Económico: Comparación de Modelos de Clasificación (ENOE)](sector-economico-comparacion-modelos/README.md) · [**App**](https://foamyhomie327.github.io/Inteligencia-Artificial/sector-economico-comparacion-modelos/app/) | Proyecto final de clasificación: compara 7 modelos con los mismos 5 folds de validación cruzada para predecir el sector económico de una persona ocupada en México, elige un modelo final (Gradient Boosting) y lo evalúa una sola vez en prueba. Incluye un tablero interactivo con un simulador que corre los modelos en el navegador. | Regresión logística, LDA, árboles, Random Forest, Gradient Boosting, SVM, redes neuronales (Keras), validación cruzada, bootstrap, importancia por permutación |
 | [Sistema de Recomendación de Libros con PCA](sistema-recomendacion-libros/README.md) · [**App**](https://foamyhomie327.github.io/Inteligencia-Artificial/sistema-recomendacion-libros/app/) | Aplicación web que recomienda libros a partir de los que el usuario marca como leídos, usando PCA entrenado con 6 millones de calificaciones de Goodreads (goodbooks-10k). Corre completa en el navegador. | PCA (SVD truncada), interpretación de cargas, proyección de usuarios nuevos, similitud coseno, evaluación precisión@k |
 | [Predicción del Sector Económico: Ensambles, SVM y Redes Neuronales (ENOE)](sector-economico-ensambles-svm-redes/README.md) | Compara Random Forest, Gradient Boosting, SVM y una red neuronal contra modelos sencillos para predecir el sector económico (primario, secundario o terciario) de una persona ocupada en México, y evalúa si la complejidad adicional se traduce en mejores predicciones. | Random Forest, Gradient Boosting, SVM, redes neuronales (Keras), validación cruzada, error out-of-bag |
@@ -28,4 +31,4 @@ Cada carpeta de proyecto es autocontenida e incluye:
 
 ## Herramientas
 
-Python (pandas, numpy, scipy, matplotlib, seaborn), statsmodels, scikit-learn, TensorFlow/Keras. HTML, CSS y JavaScript para la app de recomendación y el tablero interactivo.
+Python (pandas, numpy, scipy, matplotlib, seaborn), statsmodels, scikit-learn, TensorFlow/Keras, Gymnasium y stable-baselines3. HTML, CSS y JavaScript para la app de recomendación y el tablero interactivo.
